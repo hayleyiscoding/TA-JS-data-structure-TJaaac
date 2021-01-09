@@ -20,7 +20,7 @@ console.log(students.batch);
 
 // 6. Add another key in the object with the value of the variable `isAdult`. The value of the key should be `true/false`
 
-students.isAdult = true || false;
+students.isAdult = true;
 
 // 7. Using `console.log` print the value of `isAdult` key from the `students` object
 
@@ -36,7 +36,7 @@ students[42] = "The answer to the meaning of life";
 
 // 10. Check the length of object named `students`.
 
-
+console.log(students.length);
 
 // 11. Can you define a key of `let or var` in any object? Reason.
 
@@ -44,8 +44,9 @@ students[42] = "The answer to the meaning of life";
 
 // 12. Delete the `isAdult` property from the object `students`. Also, print the object before or after deleting the property
 
+console.log(students);
 delete students.isAdult;
-console.log(students.isAdult);
+console.log(students);
 
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
 students.batch = 43;
