@@ -1,9 +1,9 @@
 ```js
 let user = {
-  name: 'Arya',
-  sibling: ['Robb', 'Ryan', 'John'],
+  name: "Arya",
+  sibling: ["Robb", "Ryan", "John"],
 };
-let allBrothers = ['Robb', 'Ryan', 'John'];
+let allBrothers = ["Robb", "Ryan", "John"];
 let brothersCopy = user.sibling;
 let usename = user.name;
 let newUser = user;
@@ -16,20 +16,22 @@ let newUser = user;
 
 <!-- To add this image here use ![name](./hello.jpg) -->
 
+![screenshot](../hello.jpg)
+
 2. Answer the following with reason:
 
-- `user == newUser;` // output and reason
-- `user === newUser;`
-- `user.name === newUser.name;`
-- `user.name == newUser.name;`
-- `user.sibling == newUser.sibling;`
-- `user.sibling === newUser.sibling;`
-- `user.sibling == allBrothers;`
-- `user.sibling === allBrothers;`
-- `brothersCopy === allBrothers;`
-- `brothersCopy == allBrothers;`
-- `brothersCopy == user.sibling;`
-- `brothersCopy === user.sibling;`
-- `brothersCopy[0] === user.sibling[0];`
-- `brothersCopy[1] === user.sibling[1];`
-- `user.sibling[1] === newUser.sibling[1];`
+- `user == newUser;` // false - datatype is an object which is only copy by reference
+- `user === newUser;`// false - datatype is an object which is only copy by reference
+- `user.name === newUser.name;` // "Arya" "Arya" true
+- `user.name == newUser.name;`// true
+- `user.sibling == newUser.sibling;` // false - copy by reference as they are arrays
+- `user.sibling === newUser.sibling;` //false
+- `user.sibling == allBrothers;`// false - copy by reference
+- `user.sibling === allBrothers;` // false - copy by reference
+- `brothersCopy === allBrothers;` // false - copy by reference
+- `brothersCopy == allBrothers;` // false - copy by reference
+- `brothersCopy == user.sibling;` // false - copy by reference
+- `brothersCopy === user.sibling;`// false - copy by reference
+- `brothersCopy[0] === user.sibling[0];` // false - copy by reference
+- `brothersCopy[1] === user.sibling[1];` // false - copy by reference
+- `user.sibling[1] === newUser.sibling[1];` // false - copy by reference
