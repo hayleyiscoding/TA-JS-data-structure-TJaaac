@@ -17,13 +17,15 @@ Answer the following with reason after going through the above code:
 - `obj === newObj` //false 
 - `user === newObj`// false
 - `user == newObj`//false
-- `user == obj` // false
+- `user == obj` // true
 - `arr == arr2` // true
 - `arr === arr2` //true
 
 2. What's will be the value of `person1` and `person2` ? Explain with reason. Draw the memory representation diagram.
 
 <!-- To add this image here use ![name](./hello.jpg) -->
+
+![screenshot](./hello.heic)
 
 ```js
 function personDetails(person) {
@@ -37,6 +39,9 @@ console.log(person1);
 console.log(person2);
 ```
 
+// person 1 - Alex, 25
+// person 2 - John, 50
+
 3. What will be the output of the below code:
 
 ```js
@@ -46,6 +51,6 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push('Robb');
-console.log(user.brothers === brothers); //1. false 
-console.log(user.brothers.length === brothers.length); //2. false
+console.log(user.brothers === brothers); //1. true
+console.log(user.brothers.length === brothers.length); //2. true
 ```
