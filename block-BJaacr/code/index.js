@@ -19,34 +19,78 @@ Hint: (Structure of got variable)
 */
 
 // 1. Log the value of key "houses"
+console.log(got.houses);
 
 // 2. Log the length of the "houses" key
 
+console.log(got.houses.length);
+
 // 3. Log the name of all houses in got one by one
+
+for(let house of got.houses) {
+  console.log(house);
+}
 
 // 4. Log the name of all the people in house Starks (index 0) one by one
 
+for(let person of got.houses[0].people) {
+  console.log(person);
+}
+
 // 5. Log the name of all the people in house Lannisters (index 1) one by one
+
+for(let person of got.houses[1].people.name) {
+  console.log(person);
+}
 
 // 6. Log the description of all the people in house Lannisters (index 1) one by one
 
+for(let descrip of got.houses[1].people.description) {
+  console.log(descrip);
+}
+
 // 7. Log the name and description of all the people in house Lannisters (index 1) one by one like `I am [name] and my bio is [description]`
+
+
 
 // 8. Log the name and description of all the people in house Starks (index 0) one by one like `I am [name] and my bio is [description]`
 
 // 9. Log the name and description of the people in house Starks whose name is `Robb Stark`
 
+console.log(got.houses[0].people[2]);
+
 // 10. Log the name and description of the people in house Lannisters whose name is `Tywin Lannister`
+
+console.log(got.houses[1].people[1]);
 
 // 11. Push the name of the houses in an array named `houseNames` and Log the array
 
+let houseNames = [];
+for(house of got.houses) {
+  houseNames.push(house);
+  console.log(houseNames);
+}
+
 // 12. Log the size of people in Starks house
+
+console.log(got.houses[0].people.length);
 
 // 13. Log the size of people in Lannisters house
 
+console.log(got.houses[1].people.length);
+
 // 14. Add the name and size of people in an object like {Starks: 4, Lannisters: 6} and log the object
 
+function arrayToObj(people) {
+  let final = {};
+  for(let i = 0; i < people.length; i++);
+  final[i] = arr[i];
+}
+
+
 // 15. Log the name of all the people of all the houses in got one by one
+
+for(let person of got.houses)
 
 // 16. Push all names into a new array named `allPeople` and log the value array.
 
